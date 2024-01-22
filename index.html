@@ -33,7 +33,8 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                "hockey-primary": 'red',
+                "hockey-main": '#FF4240',
+                "hockey-second": 'rgba(19, 19, 24, 0.6)',
               }
             }
           }
@@ -48,6 +49,42 @@
     </style>
   </head>
   <body>
-    <h1 class="text-4xl">  hokey fan zone</h1>
+    <header class="mt-4">
+        <!-- Navbar section starts  -->
+        <nav>
+            <div class="xl:container mx-auto lg:px-12 px-3">
+                <div class="navbar">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                          <li><a class="text-hockey-main">Home</a></li>
+                          <li><a>About </a></li>
+                          <li><a>Pages </a></li>
+                          <li><a>Blog </a></li>
+                          <li><a>Contact </a></li>
+                        </ul>
+                      </div>
+                      <a class="md:text-4xl font-extrabold"><span class="text-hockey-main">H</span>ockey <span class="text-hockey-main">Fan</span> Zone</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1 text-sm">
+                        <li><a class="text-hockey-main">Home</a></li>
+                        <li><a>About </a></li>
+                        <li><a>Pages </a></li>
+                        <li><a>Blog </a></li>
+                        <li><a>Contact </a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <i class="fa-solid fa-magnifying-glass hidden md:flex md:mr-5 text-xl text-hockey-second"></i>
+                      <a class="btn bg-hockey-main text-white hover:text-black px-2">Get Ticket</a>
+                    </div>
+                  </div>
+            </div>
+        </nav>
+    </header>
   </body>
 </html>
